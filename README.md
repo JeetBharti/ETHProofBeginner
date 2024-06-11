@@ -52,24 +52,24 @@ function mint(address Address, uint Value) public
 # Parameters:
 Address: The address to which the minted tokens will be added.
 Value: The amount of tokens to be minted.
-# Description: This function increases the totalSupply by the Value specified and updates the balance of Address by the same amount.
+Description: This function increases the totalSupply by the Value specified and updates the balance of Address by the same amount.
 burn
 function burn(address Address, uint Value) public
-Parameters:
+# Parameters:
 Address: The address from which the tokens will be burned.
 Value: The amount of tokens to be burned.
 Description: This function decreases the totalSupply by the _value specified and updates the balance of _address by the same amount. It includes a check to ensure that the Address has enough tokens to burn; otherwise, it will revert the transaction with an error.
-How to Use
+# How to Use
 Deploy the Contract: Use Remix or any other Ethereum development environment to deploy the contract on the Ethereum blockchain.
 
 Mint Tokens: Call the mint function with the recipient's address and the amount of tokens to mint.
 
 Burn Tokens: Call the burn function with the sender's address and the amount of tokens to burn. Ensure the sender has enough tokens to burn, otherwise, the transaction will fail.
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+# Acknowledgments
 Solidity Documentation
 OpenZeppelin Contracts Library
 Ethereum Community
